@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>^</title>
+
+		<link rel="stylesheet" href="/css/style.css" />
+		<script src="/css/title.js"></script>
+		<script src="/css/ethers-5.6.umd.min.js "></script>
+		<link rel="stylesheet" href="/css/ico.css" />
+
+		<meta
+			name="keywords"
+			content="代币部署,分红币,,erc20,代币质押，流动性挖矿"
+		/>
+		
+	</head>
+
+	<body >
+		<div class="bgbt dispnone">
+		<div class="tan">
+			<div class="title"><h3>标题</h3></div>
+			<div class="title1">
+				<h4>内容</h4>
+			</div>
+			<div class="title2">
+				<button id="tanchuang">关闭</button>
+			</div>
+		</div>
+</div>
+
+
+		<header>
+            
+        </header>
+		<main>
+			<div class="colo"></div>
+			<div class="main1">
+				<div class="choose">
+					<div class="dropdown">
+						<div class="dropbtn">
+							<h3>网络切换</h3>
+						</div>
+					</div>
+
+					<div class="dropdown">
+						<div class="dropbtn1">
+							<li value="2">
+								<h3>选择代币</h</li>
+							</li>
+						</div>
+
+						<ul class="bbb">
+							<li value="1"><h3>其他代币</h3></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+            <div class="main2">
+			<div class="erc20">
+				<div class="title">
+					<h2>基础代币部署</h2>
+					<h4>代币基本信息</h4>
+				</div>
+
+				<form class="one">
+					<div class="one1">
+						<input autocomplete="off" class="name" type="text"  id="erc20name" placeholder="代币名称" />
+						<input autocomplete="off"  class="name1" type="text" id="rec20symbol" placeholder="代币简称" />
+					</div>
+					<div class="one2"><input autocomplete="off" class="typpl"   id="erc20supply" type="text" placeholder="发行数量" /></div>
+					<div class="one3"><h5>提示信息</h5></div>
+					<div class="one4"><button id="erc20buttn" type="button" >提交</button></div>
+				</form>
+			</div>
+			 <div class="zvxcoin">
+				<div class="title">
+					<h2>基础代币部署</h2>
+				</div>
+				<form class="two">
+					<h4 class="tltle1">代币基本信息</h4>
+					 <div class="one1">
+						<input autocomplete="off" class="name1" type="text1"  id="zvxname" value="" placeholder="代币简称"/>
+						<input autocomplete="off"  class="name2" type="text" placeholder="代币简称" id="symbol"/>
+					</div>
+					<div class="one2"><input autocomplete="off" class="name4" type="text" placeholder="总供应量"   id="supply"   /></div>
+					<div class="one3"><input autocomplete="off"  class="name5" type="text" placeholder="管理员地址"  id="addrs_4"     /></div> 
+					<div class="one4">
+						<h4 class="name6">是否开启分红：</h4>
+						<div class="switch">
+							<label>
+								<input autocomplete="off" type="checkbox" />
+								<div class="slider"></div>
+							</label>
+						</div>
+					</div>
+					<div class="one5">
+						<h4 class="name7">分红比例设置</h4>
+						<div class="buy1">
+							<input autocomplete="off" class="name8" type="text" placeholder="买入分红比例"   id="buyfee1" />
+							<input autocomplete="off" class="name9" type="text" placeholder="买入添加流动性占比"   id="buyfee2" />
+						</div>
+						<div class="buy2">
+							<input autocomplete="off" class="name10" type="text" placeholder="买入营销钱包分成"   id="buyfee3"   />
+							<input autocomplete="off" class="name11" type="text" placeholder="买入销毁比例"       id="buyfee4"   />
+						</div>
+						<div class="sell1">
+							<input autocomplete="off" class="name12" type="text" placeholder="卖出分红比例"    id="getfee1"/>
+							<input autocomplete="off" class="name13"    type="text" placeholder="卖出添加流动性占比"  id="getfee2" />
+						</div>
+						<div class="sell2">
+							<input autocomplete="off"  class="name14"  type="text" placeholder="卖出营销钱包分成"  id="getfee3" />
+							<input autocomplete="off"  class="name15"   type="text" placeholder="卖出销毁比例"    id="getfee4" />
+						</div>
+						<div class="set1">
+							<input autocomplete="off"  class="name16"  type="text" placeholder="持币多少拿分红"  id="amount_1" />
+    <select id="amount_5">
+        <option value="200000">gas费用:低</option>
+        <option value="300000" selected>gas费用:中</option>
+        <option value="400000">gas费用:高</option>
+		<option value="500000">gas费用:超高</option>
+    </select>
+
+
+
+						</div>
+						<div class="set2">
+							<input autocomplete="off" class="name17"  type="text" placeholder="分红代币地址" id="addrs_1" />
+						</div>
+						<div class="set3">
+							<input autocomplete="off" class="name18" type="text" placeholder="lp回流地址" id="addrs_5" />
+						</div>
+						<div class="set4">
+							<input autocomplete="off"  class="name19" type="text" placeholder="营销钱包地址"  id="addrs_2" />
+						</div>
+					</div>
+					<div class="one6">
+						<h4 class="name20">是否限购限卖</h4>
+						<div class="switch">
+							<label>
+								<input autocomplete="off" type="checkbox" />
+								<div class="slider"></div>
+							</label>
+						</div>
+					</div>
+					<div class="one7">
+						<h4 class="name21">限购限卖设置</h4>
+						<div class="limit">
+							<input autocomplete="off" class="name22"  type="text" placeholder="单笔买入上限" id="amount_2"/>
+							<input autocomplete="off" class="name23" type="text" placeholder="单笔卖出上限" id="amount_3" />
+							<input autocomplete="off" class="name24" type="text" placeholder="持币上限"  id="amount_4"/>
+						</div>
+					</div>
+					<div class="one8">
+						<h4 class="name25">是否开启推广</h4>
+
+						<div class="switch">
+							<label>
+								<input autocomplete="off" type="checkbox" />
+								<div class="slider"></div>
+							</label>
+						</div>
+					</div>
+					<div class="one9">
+						<h4  class="name26">推广设置</h4>
+						<div class="promote">
+							<input autocomplete="off"   class="name27" type="text" placeholder="推广层级" id="amount_8" />
+							<input autocomplete="off" class="name28" type="text" placeholder="推广费用占比"  id="amount_7"/>
+							<input autocomplete="off"  class="name29" type="text" placeholder="自动空投数量"  id="amount_6"/>
+						</div>
+					</div>
+					<div class="one10">
+						<h4>是否杀区块</h4>
+						<div class="switch">
+							<label id="amount_9">
+								<input autocomplete="off" type="checkbox" id="amount_91" />
+								<div class="slider"></div>
+							</label>
+						</div>
+					</div>
+					<h4 class="one11">提示信息</h4>
+					<button class="one12"   type="button">提交</button>
+				</form>
+			</div> 
+            </div> 
+		</main>
+		<footer></footer>
+
+		<script src="/css/header.js"></script>
+		<!-- <script src="footer.js"></script> -->
+        <script src="/css/mint.js"></script>
+		
+		<script src="/css/zvxx.js"></script>
+
+
+
+
+	</body>
+</html>
+
+

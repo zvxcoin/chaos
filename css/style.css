@@ -1,0 +1,1046 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* 设置A标签样式 */
+a {
+	text-decoration: none;
+	color: #555;
+}
+/* 设置页面背景 */
+body {
+	background-color: rgb(243, 245, 247);
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* 去除li标签 小黑点 */
+li {
+	list-style: none;
+}
+
+input {
+	outline: none;
+}
+
+select {
+	outline: none;
+	border: 0.5px solid rgb(225, 225, 225);
+	border-radius: 10px;
+	color: #555;
+	text-align: center;
+	text-align-last: center;
+}
+
+option {
+	outline: none;
+}
+
+header {
+	width: 100%;
+	background-color: rgb(33, 37, 41);
+	position: fixed;
+
+	top: 0px;
+	z-index: 99;
+}
+
+header > .nav {
+	display: grid;
+	width: 1200px;
+	color: #f9f9f9;
+	height: 45px;
+	grid-template-columns: 100px 1fr 360px;
+	margin: auto;
+	gap: 10px;
+	place-items: center;
+	grid-auto-rows: 37px;
+}
+
+header .nav .icon-daohang {
+	display: none;
+}
+
+header .nav .daohang .navs li a {
+	color: #f9f9f9;
+}
+
+header .nav .daohang .navs li:nth-of-type(1n + 3) a {
+	pointer-events: none;
+	color: rgb(97, 94, 94);
+}
+header > .nav > .navs li a:hover {
+	color: #1ab675;
+	cursor: pointer;
+}
+header > .nav > .left {
+	display: grid;
+	grid-template-columns: 120px 240px;
+	place-items: center;
+	gap: 15px;
+}
+header > .nav > .left .connectwallet {
+	width: 150px;
+	height: 30px;
+	border: solid 1px #1ab675;
+	color: rgb(236, 240, 245);
+	background-color: rgb(33, 37, 41);
+	border-radius: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+header > .nav > .left > .dropdown {
+	display: grid;
+}
+
+header > .nav > .left > .dropdown .title {
+	display: grid;
+	width: 110px;
+	height: 30px;
+	color: #1ab675;
+	border-radius: 10px;
+	background-color: rgb(13, 14, 15);
+	place-items: center;
+}
+header > .nav > .left .Accounts {
+	display: grid;
+	grid-template-columns: 80px 125px;
+	height: 30px;
+	width: 220px;
+	margin: auto;
+	color: #1ab675;
+	border-radius: 10px;
+	background-color: rgb(13, 14, 15, 25);
+	place-content: center;
+}
+
+main .colo {
+	background-color: rgba(29, 28, 28, 0.9);
+	/* background: url("../img/bg.webp"); */
+	padding: 50px 0px 0px 0px;
+	opacity: 1;
+}
+
+main .colo .welcome {
+	width: 1200px;
+	color: aliceblue;
+	height: 400px;
+	display: grid;
+	grid-template-columns: 500px 1fr;
+	margin: auto;
+	place-items: center start;
+	gap: 30px;
+}
+main .colo .welcome .right img {
+	height: 356px;
+}
+
+main .vision {
+	width: 1200px;
+	display: grid;
+	grid-template-rows: 40px 20px;
+	margin: auto;
+	place-items: center center;
+	gap: 15px;
+	padding: 50px 0px 0px 0px;
+}
+
+main .introduce {
+	width: 1200px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 152px 30px;
+	margin: auto;
+	gap: 5px;
+	place-items: center center;
+	padding: 30px 0px 0px 0px;
+}
+
+main .coin {
+	width: 1200px;
+	height: 520px;
+	display: grid;
+	margin: 30px auto auto auto;
+	place-items: center center;
+	grid-template-rows: 45px 1fr;
+	gap: 5px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 7.5px 32.5px 0 rgb(0 0 0 / 5%);
+	border-radius: 10px;
+}
+
+main .coin table {
+	border-collapse: collapse;
+	width: 95%;
+}
+main .coin table tbody {
+	color: #555;
+}
+
+footer .par {
+	background-color: rgb(34, 34, 34);
+}
+footer .par .partner {
+	width: 1200px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	margin: 20px auto auto;
+	place-items: center center;
+	padding: 15px 0 15px;
+	gap: 10px;
+}
+footer .par .partner img {
+	width: 170px;
+}
+
+footer .bottm {
+	background-color: black;
+	color: aliceblue;
+}
+footer .bottm .jumu {
+	width: 1200px;
+	display: grid;
+	grid-template-columns: 125px 1fr 238px;
+	margin: auto;
+	place-items: center;
+}
+footer .bottm .jumu img {
+	width: 125px;
+}
+footer .bottm .jumu .contactus img {
+	width: 30px;
+}
+
+footer .bottm .jumu .contactus span {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+main .main1 {
+	width: 1200px;
+	padding: 45px 0 0;
+	margin: auto;
+}
+main .main2 {
+	width: 1200px;
+	margin: auto;
+}
+main .main1 .choose {
+	width: 587px;
+	height: 60px;
+	background-color: rgb(255, 255, 255);
+	display: grid;
+	grid-template-columns: 250px 250px;
+	margin: auto;
+	place-content: center;
+	place-items: center;
+	gap: 20px;
+	border-radius: 20px;
+	box-shadow: 0 7.5px 32.5px 0 rgb(0 0 0 / 5%);
+}
+
+main .main1 .choose .dropdown .dropbtn,
+main .main1 .choose .dropdown .dropbtn1 {
+	display: grid;
+	width: 220px;
+	height: 30px;
+	border: solid 1px rgb(225, 225, 225);
+	border-radius: 5px;
+	place-content: center;
+	background-color: rgb(255, 255, 255);
+	color: #555;
+	cursor: pointer;
+}
+
+main {
+	width: 100%;
+}
+
+main .main1 .choose .dropdown .bbb {
+	display: none;
+	position: absolute;
+	background-color: #1ab675;
+	background-color: #f9f9f9;
+	width: 220px;
+	border-radius: 5px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 5px 16px;
+	text-align: center;
+	color: #555;
+}
+main .main1 .choose .dropdown .dropbtn1:hover + * {
+	display: block;
+}
+main .main1 .choose .dropdown .bbb:hover {
+	display: block;
+	background-color: #1ab675;
+	color: #f9f9f9;
+	cursor: pointer;
+}
+main .erc20 {
+	display: grid;
+	width: 587px;
+	grid-template-rows: 100px 1fr;
+	margin: 20px auto 40px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+	place-items: center;
+	box-shadow: 0 7.5px 32.5px 0 rgb(0 0 0 / 5%);
+}
+
+main .erc20 .title {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	gap: 10px;
+	text-align: center;
+	margin: auto;
+}
+
+main .one {
+	width: 587px;
+
+	display: grid;
+	padding: 20px 0px 20px;
+	grid-template-rows: repeat(4, 60px);
+	place-items: center;
+}
+main .one .one1 input {
+	width: 250px;
+	height: 30px;
+	border: 0.5px solid rgb(225, 225, 225);
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+}
+main .one .one1 {
+	display: grid;
+	width: 520px;
+	grid-template-columns: 260px 260px;
+	place-items: center;
+}
+
+main .one .one2 input {
+	width: 510px;
+	height: 30px;
+	border: 0.5px solid rgb(225, 225, 225);
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+}
+main .one .one3 {
+	display: grid;
+	width: 510px;
+	height: 50px;
+	place-items: center;
+	background-color: rgb(191, 230, 212);
+	border-radius: 10px;
+	color: rgb(46, 122, 87);
+}
+main .one .one4 button {
+	width: 510px;
+	height: 30px;
+	border: 0px;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #1ab675;
+	color: #ffffff;
+	border-radius: 10px;
+}
+
+main .zvxcoin {
+	display: grid;
+
+	grid-template-rows: 40px 1fr;
+	width: 587px;
+	margin: 30px auto 0;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+	box-shadow: 0 7.5px 32.5px 0 rgb(0 0 0 / 5%);
+	padding: 20px 0;
+	place-items: center;
+	gap: 5px;
+}
+
+main .zvxcoin input {
+	height: 30px;
+	border: 0.5px solid rgb(225, 225, 225);
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+}
+
+main .zvxcoin .two {
+	width: 530px;
+	display: grid;
+	grid-template-rows: repeat(13, auto);
+	place-items: center;
+	gap: 10px;
+}
+
+main .zvxcoin .two .one1 {
+	display: grid;
+	grid-template-columns: 260px 260px;
+	gap: 10px;
+}
+
+main .zvxcoin .two .one2 input,
+main .zvxcoin .two .one3 input {
+	width: 530px;
+}
+
+main .zvxcoin .two .one5 {
+	display: grid;
+	grid-template-rows: repeat(8, auto);
+	gap: 10px;
+}
+
+main .zvxcoin .two .one5 .buy1,
+main .zvxcoin .two .one5 .buy2,
+main .zvxcoin .two .one5 .sell1,
+main .zvxcoin .two .one5 .sell2,
+main .zvxcoin .two .one5 .set1 {
+	display: grid;
+	grid-template-columns: 260px 260px;
+	gap: 10px;
+}
+
+main .zvxcoin .two .one5 .set2 input,
+main .zvxcoin .two .one5 .set3 input,
+main .zvxcoin .two .one5 .set4 input {
+	width: 530px;
+}
+
+main .zvxcoin .two .one7,
+main .zvxcoin .two .one9 {
+	display: grid;
+	grid-template-rows: repeat(2, auto);
+	gap: 10px;
+}
+main .zvxcoin .two .one7 .limit,
+main .zvxcoin .two .one9 .promote {
+	width: 530px;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	gap: 4px;
+}
+main .zvxcoin .two .one7 .limit input,
+main .zvxcoin .two .one9 .promote input {
+	width: 174px;
+}
+
+main .zvxcoin .two .one11 {
+	display: grid;
+	width: 530px;
+	height: 30px;
+	place-items: center;
+	background-color: rgb(191, 230, 212);
+	border-radius: 10px;
+	color: rgb(46, 122, 87);
+}
+
+main .zvxcoin .two .one12 {
+	width: 530px;
+	height: 30px;
+	border: 0px;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #1ab675;
+	color: #ffffff;
+	border-radius: 10px;
+}
+
+main .zvxcoin .two .one4,
+main .zvxcoin .two .one6,
+main .zvxcoin .two .one8,
+main .zvxcoin .two .one10 {
+	width: 530px;
+	display: grid;
+	grid-template-columns: auto 1fr;
+}
+main .zvxcoin .two .switch label {
+	width: 40px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+}
+
+main .zvxcoin .two .switch label input {
+	height: 5px;
+}
+
+/* 没选中时 */
+main .zvxcoin .two .switch label .slider {
+	background-color: #ccc;
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	border-radius: 20px;
+	transition: all 0s ease;
+}
+
+main .zvxcoin .two .switch label .slider:before {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: white;
+	margin: 2px;
+	transition: all 0s ease-in-out;
+}
+
+main .zvxcoin .two .switch input:checked + .slider {
+	background-color: #1ab675;
+}
+
+main .zvxcoin .two .switch input:checked + .slider::before {
+	background-color: white;
+	transform: translateX(20px);
+}
+
+main .zvxcoin .two .one5,
+main .zvxcoin .two .one7,
+main .zvxcoin .two .one9 {
+	color: #555;
+}
+
+main .displaynone,
+main .zvxcoin .two .displaynone {
+	display: none;
+}
+
+main .displayblock {
+	display: block;
+}
+
+main .zvxcoin .two .one11 {
+	font-size: 14px;
+	height: 45px;
+}
+
+main .an button h3 {
+	color: rgb(255, 255, 255);
+}
+
+header .nav .logo img {
+	height: 22px;
+}
+/* main .erc20 {
+	display: none;
+} */
+/* main .two .didv {
+	width: 50px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+}
+
+main .two .didv .slider {
+	background-color: #ccc;
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	border-radius: 20px;
+	transition: all 0.5s ease;
+}
+main .two .didv .slider:before {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: white;
+	margin: 2px;
+	transition: all 0.4s ease-in-out;
+}
+main .two .didv input:checked + .slider {
+	background-color: #1ab675;
+}
+
+main .two .didv input:checked + .slider:before {
+	background-color: white;
+	transform: translateX(30px);
+} */
+
+header .nav .left .dropdown .list ul {
+	display: none;
+}
+
+header > .nav > .left > .dropdown:hover .list ul {
+	display: block;
+	display: grid;
+	height: 60px;
+	width: 110px;
+	grid-template-rows: repeat(2, 27.5px);
+	background-color: #eceaea;
+	color: #0c0c0c;
+	gap: 2px;
+	border-radius: 5px;
+	position: absolute;
+	place-items: center;
+}
+header > .nav > .left > .dropdown .list ul li:hover {
+	width: 100%;
+	height: 100vm;
+	background-color: #1ab675;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+main .coin table tbody {
+	display: grid;
+	grid-template-rows: repeat(10, 35px);
+	gap: 5px;
+}
+
+main .coin table thead {
+	display: grid;
+	grid-template-rows: 35px;
+	gap: 5px;
+}
+
+main .coin table thead tr,
+main .coin table tbody tr,
+main .coin table tbody tr + * {
+	display: grid;
+	grid-template-columns: 150px 300px 220px 400px 80px;
+	place-items: center start;
+	border-bottom: solid 1px rgb(110, 107, 107, 0.5);
+}
+
+main .coin table tbody tr:nth-of-type(1n) th:last-of-type {
+	display: grid;
+	height: 35px;
+	width: 80px;
+	font-size: 10px;
+	place-items: center;
+}
+main .coin table thead tr:nth-of-type(1n) th:last-of-type {
+	display: grid;
+	height: 35px;
+	width: 80px;
+
+	place-items: center;
+}
+main .colo .welcome .left {
+	display: grid;
+	width: 500px;
+	grid-template-rows: 60px 100px 100px 100px;
+	gap: 5px;
+	place-items: center;
+}
+main .colo .welcome .left div:nth-of-type(2),
+main .colo .welcome .left div:nth-of-type(2) + * {
+	display: grid;
+	width: 500px;
+	height: 100px;
+	color: #1ab675;
+	place-items: center;
+
+	font-size: 60px;
+	letter-spacing: 2px;
+	opacity: 1;
+}
+main .colo .welcome .left div:nth-of-type(1) {
+	width: 400px;
+	font-size: 30px;
+}
+
+main .colo .welcome .left .an {
+	display: grid;
+	grid-template-rows: repeat(2, 30px);
+	width: 350px;
+	gap: 15px;
+}
+main .colo .welcome .left .an button:nth-of-type(2) {
+	background-color: #1ab675;
+	color: rgb(255, 255, 255);
+	border: 0px;
+	border-radius: 5px;
+	letter-spacing: 2px;
+}
+main .colo .welcome .left .an button:nth-of-type(1) {
+	background-color: rgb(0 0 0 / 5%);
+	border: solid 0.5px #ffffff;
+	color: rgb(255, 255, 255);
+	/* border: 0px; */
+	border-radius: 5px;
+	letter-spacing: 2px;
+}
+
+body .tan {
+	width: 400px;
+	height: 200px;
+	display: grid;
+	grid-template-rows: 45px 1fr 42px;
+	background-color: rgb(243, 245, 247);
+	gap: 10px;
+	border-radius: 10px;
+	place-items: center;
+	box-shadow: 0 7.5px 32.5px 0 rgb(0 0 0 / 5%);
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 99;
+}
+
+header .nav .daohang .navs {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+body .tan .title {
+	height: 45px;
+	padding: 10px 20px 10px;
+	place-self: center start;
+}
+
+body .tan .title1 {
+	text-align: center;
+}
+
+.tan .title2 {
+	place-self: center end;
+	padding: 0px 20px;
+}
+.tan #tanchuang {
+	border: 0px;
+	width: 60px;
+	height: 30px;
+	background-color: #1ab675;
+	font-size: 16px;
+}
+
+body .dispnone {
+	display: none;
+}
+body .bgbt {
+	position: fixed;
+	width: 100%;
+	height: 100vm;
+	z-index: 98;
+	background-color: rgb(0 0 0 / 60%);
+}
+
+@media screen and (max-width: 1200px) {
+	header .nav .icon-daohang {
+		display: block;
+	}
+
+	html {
+		font-size: calc(100vm / 3.75);
+		/* 相当于设置 1rem=100px */
+	}
+
+	body {
+		font-size: 0.16rem;
+	}
+
+	html {
+		font-size: 100px;
+	}
+
+	body .nav {
+		width: 90%;
+	}
+
+	body .nav .daohang .navs {
+		width: 1rem;
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: repeat(5, 1fr);
+		height: 2rem;
+		position: fixed;
+		left: 0;
+		place-items: center;
+		gap: 0.05rem;
+		border-radius: 0.1rem;
+	}
+
+	body .nav {
+		display: grid;
+		grid-template-columns: 50px 1fr 2rem;
+		margin: auto;
+		gap: 0.01rem;
+	}
+
+	body .nav .daohang {
+		grid-area: 1/1/2/2;
+	}
+
+	body .nav .left {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0.05rem;
+	}
+
+	body .nav .left .dropdown .title {
+		font-size: 0.05rem;
+		width: 0.8rem;
+	}
+
+	body .nav .left .dropdown .title .icon-yuyan {
+		font-size: 0.1rem;
+	}
+	body .nav .left .Accounts {
+		width: 1rem;
+		display: grid;
+		grid-template-columns: auto;
+	}
+	body .nav .left .Accounts .icon-kucunyue {
+		display: none;
+	}
+
+	body .nav .left .Accounts .icon-ziyuan {
+		width: 0.89rem;
+		font-size: 0.1rem;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+	header > .nav > .left .connectwallet {
+		width: 0.8rem;
+		font-size: 0.1px;
+	}
+
+	header .nav .daohang .navs {
+		display: none;
+		background-color: #0c0c0c;
+	}
+	header .nav .daohang .icon-daohang:hover + * {
+		display: grid;
+	}
+
+	header .nav .daohang .navs:hover {
+		display: grid;
+	}
+
+	header .nav .daohang .navs li {
+		text-align: center;
+		width: 100%;
+	}
+	header .nav .daohang .navs li:hover {
+		background-color: #1ab675;
+		border-radius: 0.1rem;
+	}
+
+	main .colo .welcome .left {
+		width: 90%;
+		display: grid;
+		grid-template-rows: auto;
+	}
+
+	body main .colo .welcome .right {
+		display: none;
+	}
+	body main .colo .welcome {
+		width: 90%;
+		gap: 0rem;
+		display: grid;
+		grid-template-columns: auto;
+	}
+	body main .colo .welcome .left,
+	body main .colo .welcome .left .title1,
+	body main .colo .welcome .left .title2,
+	main .colo .welcome .left div:nth-of-type(1) {
+		width: 100%;
+	}
+
+	body main .vision {
+		width: 90%;
+		display: grid;
+	}
+
+	body main .introduce {
+		width: 90%;
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: repeat(9, auto);
+	}
+
+	body main .introduce span:nth-of-type(1) {
+		grid-row: 2 / 3;
+	}
+	body main .introduce span:nth-of-type(2) {
+		grid-row: 5 / 6;
+	}
+	body main .introduce span:nth-of-type(4) {
+		grid-row: 3 / 4;
+	}
+	body main .introduce span:nth-of-type(5) {
+		grid-row: 6 / 7;
+	}
+
+	main .coin {
+		width: 90%;
+		height: suto;
+		display: grid;
+		place-items: center center;
+		grid-template-rows: 0.45rem 1fr;
+		gap: 0.05rem;
+		background-color: rgb(255, 255, 255);
+		box-shadow: 0 0.075rem 0.325rem 0 rgb(0 0 0 / 5%);
+		border-radius: 10px;
+	}
+
+	main .coin table thead tr th:nth-of-type(2n),
+	main .coin table tbody tr th:nth-of-type(2n) {
+		display: none;
+	}
+
+	main .coin table thead tr,
+	main .coin table tbody tr,
+	main .coin table tbody tr + * {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 30% 50% 20%;
+		place-items: center start;
+		border-bottom: solid 1px rgb(110, 107, 107, 0.5);
+	}
+	footer .par {
+		width: 100vw;
+		height: auto;
+	}
+	footer .par .partner {
+		width: 90%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(8, 1fr);
+		margin: 0.2rem auto 0rem;
+		padding: 0.15rem 0 0.15rem;
+		gap: 0.1rem;
+	}
+	footer .bottm .jumu {
+		width: 90%;
+		display: grid;
+		grid-template-columns: 1.25rem 1fr 2.38rem;
+		margin: auto;
+	}
+	main .main1,
+	main .main2 {
+		width: 100vw;
+	}
+	/* body .bottm {
+		display: none;
+	} */
+}
+@media screen and (max-width: 586px) {
+	main .main1 .choose {
+		width: 95vw;
+		display: grid;
+	}
+
+	main .main1 .choose {
+		width: 3.4rem;
+		grid-template-columns: 1.6rem 1.6rem;
+		gap: 0.05rem;
+		margin: auto;
+		font-size: 0.14rem;
+	}
+
+	main .main1 .choose .dropdown .dropbtn,
+	main .main1 .choose .dropdown .dropbtn1 {
+		display: grid;
+		width: 1.6rem;
+	}
+	main .main1 .choose .dropdown .bbb {
+		width: 1.6rem;
+		font-size: 0.12rem;
+	}
+
+	main .erc20 {
+		display: grid;
+		width: 3.4rem;
+		grid-template-rows: 0.6rem 1fr;
+	}
+
+	main .one {
+		width: 3.4rem;
+		place-items: center;
+		padding: 0;
+	}
+
+	main .one .one1 {
+		display: grid;
+		width: 3.2rem;
+		grid-template-columns: 1.6rem 1.6rem;
+		gap: 0.05rem;
+	}
+	main .one .one1 input {
+		width: 1.6rem;
+	}
+	main .one .one2 input,
+	main .one .one3,
+	main .one .one4 button {
+		width: 3.2rem;
+	}
+	main .displaynone,
+	main .zvxcoin .two .displaynone {
+		display: none;
+	}
+
+	main .displayblock {
+		display: block;
+	}
+
+	main .zvxcoin {
+		width: 3.4rem;
+	}
+	main .zvxcoin .two {
+		width: 3.4rem;
+	}
+
+	main .zvxcoin .two .one4,
+	main .zvxcoin .two .one6,
+	main .zvxcoin .two .one8,
+	main .zvxcoin .two .one10 {
+		width: 3.2rem;
+	}
+	main .zvxcoin .two .one1 {
+		grid-template-columns: 1.6rem 1.6rem;
+	}
+
+	main .zvxcoin .two .one2 input,
+	main .zvxcoin .two .one3 input,
+	main .zvxcoin .two .one11,
+	main .zvxcoin .two .one12 {
+		width: 3.2rem;
+	}
+	main .zvxcoin .two .one5 .buy1,
+	main .zvxcoin .two .one5 .buy2,
+	main .zvxcoin .two .one5 .sell1,
+	main .zvxcoin .two .one5 .sell2,
+	main .zvxcoin .two .one5 .set1 {
+		grid-template-columns: 1.6rem 1.6rem;
+	}
+	main .zvxcoin .two .one5 .set2 input,
+	main .zvxcoin .two .one5 .set3 input,
+	main .zvxcoin .two .one5 .set4 input {
+		width: 3.2rem;
+	}
+	main .zvxcoin .two .one7 .limit,
+	main .zvxcoin .two .one9 .promote {
+		width: 3.2rem;
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		gap: 0.04rem;
+	}
+	main .zvxcoin .two .one7 .limit input,
+	main .zvxcoin .two .one9 .promote input {
+		width: 1.6rem;
+	}
+}
